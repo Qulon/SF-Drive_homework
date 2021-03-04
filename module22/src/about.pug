@@ -1,0 +1,88 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title О нас
+    link(rel='stylesheet' type='text/css' href='../dist/main.css')
+  body
+    header
+      a.logo(href='https://skillfactory.ru/') SkillDrive
+      .navbar-menu
+        nav.navbar
+          ul.navbar-end
+            li.navbar-item
+              a(href='about.html') О нас
+            li.navbar-item
+              a(href='') Условия
+            li.navbar-item
+              a(href='faq.html') Частые Вопросы
+        button.loginButton.btn_login Войти 
+      .burger
+        input#check-menu(type='checkbox')
+        label.menuLabel(for='check-menu')
+        .burger-line.first
+        .burger-line.second
+        .burger-line.third
+        .burger-line.fourth
+        nav.main-menu
+          a.burgerLink(href='about.html') О нас
+          a.burgerLink(href='') Условия
+          a.burgerLink(href='faq.html') Частые Вопросы
+          a.burgerLink(href='') Войти
+    main
+      section.aboutUsPreview
+        img.image(src='../src/images/logo.svg' alt='Приветственная картинка')
+        h1 О нас
+        .aboutUsText
+          | Это учебный проект, созданный с целью получения боевого опыта в разработке настоящего живого
+          | веб-приложения. Этот сервис имитирует работу каршеринга, в котором можно не только арендовать
+          | автомобили, но и сдавать их в аренду.
+      section.contacts
+        h2 Контакты
+        .email
+          span.key Электронная почта
+          span.value drive@skillfactory.com
+        .email
+          span.key Телефон
+          span.value +7 912 123-45-67
+      section.team
+        h2 Команда
+        .first
+          .firstRow
+            .person
+              img.photo(src='../src/images/team1.png' alt='фото Иван Иванов')
+              p.name Иван Иванов
+              p.position CEO
+            .person
+              img.photo(src='../src/images/team2.png' alt='фото Алексей Смирнов')
+              p.name Алексей Смирнов
+              p.position Frontend-разработчик
+          .firstRow
+            .person
+              img.photo(src='../src/images/team3.png' alt='фото Денис Ярцев')
+              p.name Денис Ярцев
+              p.position Backend-разработчик
+            .person
+              img.photo(src='../src/images/team4.png' alt='фото Николай Морозов')
+              p.name Николай Морозов
+              p.position Дизайнер
+        .secondRow
+          .person
+            img.photo(src='../src/images/team5.png' alt='фото Ирина Деева')
+            p.name Ирина Деева
+            p.position Копирайтер
+          .person
+            img.photo(src='../src/images/team6.png' alt='фото Мария Стрелкова')
+            p.name Мария Стрелкова
+            p.position SMM
+      footer
+        .copyright © SkillDrive Inc. 2020
+        .social
+          ul
+            li.footerSocial
+              img.socialLogo(src='../src/images/vk_logo.svg' alt='логотип Vkontakte')
+            li.footerSocial
+              img.socialLogo(src='../src/images/instagram_logo.svg' alt='логотип Instagram')
+            li.footerSocial
+              img.socialLogo(src='../src/images/facebook_logo.svg' alt='логотип Facebook')

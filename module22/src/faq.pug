@@ -1,0 +1,80 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Частые вопросы
+    link(rel='stylesheet' type='text/css' href='../dist/main.css')
+  body
+    header
+      a.logo(href='https://skillfactory.ru/') SkillDrive
+      .navbar-menu
+        nav.navbar
+          ul.navbar-end
+            li.navbar-item
+              a(href='about.html') О нас
+            li.navbar-item
+              a(href='') Условия
+            li.navbar-item
+              a(href='faq.html') Частые Вопросы
+        button.loginButton.btn_login Войти 
+      .burger
+        input#check-menu(type='checkbox')
+        label.menuLabel(for='check-menu')
+        .burger-line.first
+        .burger-line.second
+        .burger-line.third
+        .burger-line.fourth
+        nav.main-menu
+          a.burgerLink(href='module19.html') О нас
+          a.burgerLink(href='') Условия
+          a.burgerLink(href='faq.html') Частые Вопросы
+          a.burgerLink(href='') Войти
+    main
+      img.image(src='../src/images/faq_main.svg' alt='Картинка со знаком вопроса')
+      h1 Частые вопросы
+      p.textL Отвечаем на вопросы, которые у вас могут возникнуть.
+      .faqWrapper
+        button.collapse
+          | Могу ли я отменить бронь?
+          img.arrowDown(src='../src/images/arrowDown.svg' alt='Стрелка вниз')
+          img.arrowUp(src='../src/images/arrowUp.svg' alt='Стрелка вверх')
+        .content Здесь был бы очень интересный текст, но по ТЗ его нет
+        button.collapse
+          | Могу ли я вернуть деньги, если не подошёл автомобиль?
+          img.arrowDown(src='../src/images/arrowDown.svg' alt='Стрелка вниз')
+          img.arrowUp(src='../src/images/arrowUp.svg' alt='Стрелка вверх')
+        .content Здесь был бы очень интересный текст, но по ТЗ его нет
+        button.collapse
+          | Что делать, если случилось ДТП?
+          img.arrowDown(src='../src/images/arrowDown.svg' alt='Стрелка вниз')
+          img.arrowUp(src='../src/images/arrowUp.svg' alt='Стрелка вверх')
+        .content Здесь был бы очень интересный текст, но по ТЗ его нет
+        button.collapse
+          | Могу ли я оставить автомобиль в удобном для меня месте?
+          img.arrowDown(src='../src/images/arrowDown.svg' alt='Стрелка вниз')
+          img.arrowUp(src='../src/images/arrowUp.svg' alt='Стрелка вверх')
+        .content
+          | Данный вопрос обсуждается с собственником, но как правило автомобиль нужно вернуть
+          | туда, где вы его получили.
+        button.collapse
+          | Что делать, если собственник просит заплатить ему напрямую?
+          img.arrowDown(src='../src/images/arrowDown.svg' alt='Стрелка вниз')
+          img.arrowUp(src='../src/images/arrowUp.svg' alt='Стрелка вверх')
+        .content Здесь был бы очень интересный текст, но по ТЗ его нет
+        button.collapse
+          | Должен ли я заправлять автомобиль?
+          img.arrowDown(src='../src/images/arrowDown.svg' alt='Стрелка вниз')
+          img.arrowUp(src='../src/images/arrowUp.svg' alt='Стрелка вверх')
+        .content Здесь был бы очень интересный текст, но по ТЗ его нет
+      footer
+        .copyright © SkillDrive Inc. 2020
+        .social
+          ul
+            li.footerSocial
+              img.socialLogo(src='../src/images/vk_logo.svg' alt='логотип Vkontakte')
+            li.footerSocial
+              img.socialLogo(src='../src/images/instagram_logo.svg' alt='логотип Instagram')
+            li.footerSocial
+              img.socialLogo(src='../src/images/facebook_logo.svg' alt='логотип Facebook')
+    script(src='../dist/main.js')
